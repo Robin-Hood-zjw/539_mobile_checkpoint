@@ -328,4 +328,26 @@ a:hover {
     .navigation_bar {
         animation: none;
     }
+
+    .bd {
+        width: 142%;
+        height: 142%;
+        position: absolute;
+        left: -21%;
+        top: -21%;
+        background: url("../images/edinburgh_city_hall.jpeg");
+        background-size: 100%;
+        background-position: center center;
+        display: flex;
+        color: #003;
+        font-size: 5vw;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        animation: spin 18s linear infinite reverse;
+        opacity: 1;
+        z-index: 2;
+    }
 }
