@@ -32,40 +32,6 @@ footer {
     box-shadow: 5px 10px rgba(0, 0, 0, 0.2), 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media screen and (min-width: 900px){
-    header{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    body > header{
-        position: sticky;
-        top: 0;
-        right: 0;
-        left: 0;
-    }
-    .nav_links{
-        flex-direction: row;
-    }
-    .card{
-        flex-basis: 250px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header-links {
     flex: 5;
     text-align: center;
@@ -301,7 +267,7 @@ a:hover {
     width: 20vmin;
     height: 20vmin;
     border: 1px dashed rgba(255,255,255,0.4);
-    position: relative;
+    position: relative;}
 
 &::before {
      content: "";
@@ -340,7 +306,7 @@ a:hover {
     position: absolute;
     left: -21%;
     top: -21%;
-    background: url(../images/edinburgh_city_hall.jpeg);
+    background: url("../images/edinburgh_city_hall.jpeg");
     background-size: 100%;
     background-position: center center;
     display: flex;
@@ -356,15 +322,10 @@ a:hover {
     z-index: 2;
 }
 
-@keyframes morph {
-    0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;}
-    100% {border-radius: 40% 60%;}
-}
 
-@keyframes spin {
-    to {
-        transform: rotate(1turn);
+
+@media (prefers-reduced-motion){
+    .navigation_bar, .bd {
+        animation: none;
     }
 }
-
-button
